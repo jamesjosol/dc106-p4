@@ -9,15 +9,13 @@
                         <button class="btn bg-white ml-1" (click)="maleOnly()" [ngClass]="mbtn ? 'toogle' : ''" title="Male Only">M</button>
                         <button class="btn bg-white ml-1" (click)="showAll()" [ngClass]="abtn ? 'toogle' : ''" title="All">A</button>
                     </div>
-                    
                 </div>
-                
             </div>
             <div class="card-body">
                 <ul class="list-group">
-                    <li class="list-group-item" *ngFor="let member of members" >
-                        {{ member.name }}
-                        <span class="badge badge-info p-2 float-right">{{ member.age }} years old</span>
+                    <li class="list-group-item" *ngFor="let employee of employees" >
+                        {{ employee.name }}
+                        <span class="badge badge-info p-2 float-right">{{ employee.specialty }}</span>
                     </li>           
                 </ul>
             </div>

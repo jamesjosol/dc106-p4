@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
-import { MembersComponent } from './members/members.component';
-import { MembersService } from './members/members.service';
+import { EmployeesComponent } from './employees/employees.component';
+import { EmployeesService } from './employees/employees.service';
 
 @NgModule({
   declarations: [
     AppComponent,
-    MembersComponent
+    EmployeesComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [
-    MembersService
+    EmployeesService
   ],
   bootstrap: [AppComponent]
 })
