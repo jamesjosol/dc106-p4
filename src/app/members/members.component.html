@@ -1,0 +1,26 @@
+<div class="row mb-3">
+    <div class="col-md-6 offset-md-3">
+        <div class="card">
+            <div class="card-header bg-primary text-white">
+                  <div class="card-title">
+                    <h3 class="d-inline">{{ title }}</h3>
+                    <div class="d-inline float-right">
+                        <button class="btn bg-white" (click)="femaleOnly()" [ngClass]="fbtn ? 'toogle' : ''" title="Female Only">F</button>
+                        <button class="btn bg-white ml-1" (click)="maleOnly()" [ngClass]="mbtn ? 'toogle' : ''" title="Male Only">M</button>
+                        <button class="btn bg-white ml-1" (click)="showAll()" [ngClass]="abtn ? 'toogle' : ''" title="All">A</button>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="card-body">
+                <ul class="list-group">
+                    <li class="list-group-item" *ngFor="let member of members" >
+                        {{ member.name }}
+                        <span class="badge badge-info p-2 float-right">{{ member.age }} years old</span>
+                    </li>           
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
